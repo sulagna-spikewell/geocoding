@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  pcgc-geocoder:
+    container_name: pcgc_geocoder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "ghcr.io/pcgcid/geocoder_pcgc:${TAG:-latest}"
